@@ -9,52 +9,45 @@ import {
 } from "@heroui/navbar";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
+import Image from "next/image";
 
-export const AcmeLogo = () => {
-  return (
-    <svg fill="none" height="36" viewBox="0 0 32 32" width="36">
-      <path
-        clipRule="evenodd"
-        d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-        fill="currentColor"
-        fillRule="evenodd"
-      />
-    </svg>
-  );
-};
+const menuItems = [
+  { item: "Inicio", id: 1, href: "/" },
+  { item: "Servicios", id: 2, href: "/Services" },
+  { item: "Nosotros", id: 3, href: "/Us" },
+  { item: "Contacto", id: 4, href: "/Contact" },
+];
 
 const Header = () => {
   return (
     <Navbar>
       <NavbarBrand>
-        <AcmeLogo />
-        <p className="font-bold text-inherit">ACME</p>
+        <Image
+          src="/LACEB.png"
+          alt="herolaceb"
+          width={170}
+          height={100}
+          priority
+        />
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-1 xl:gap-4" justify="center">
+        {menuItems.map((link, href) => (
+          <NavbarItem key={link.id}>
+            <Link href={link.href} className="text-gray">
+              {link.item}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+        <NavbarItem className="">
+          <Image
+            src="/assets/emacredition.png"
+            alt="herolaceb"
+            width={150}
+            height={100}
+            priority
+          />
         </NavbarItem>
       </NavbarContent>
     </Navbar>

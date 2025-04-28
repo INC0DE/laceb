@@ -1,9 +1,13 @@
-import { Button } from "@heroui/button";
+import Hero from "./Home/Hero";
+import Industries from "./Home/Industries";
+import Introduction from "./Home/Introduction";
 
 const Home = () => {
   return (
-    <div  className="overflow-hidden h-screen">
-      <Button>Click me</Button>
+    <div className="overflow-hidden">
+      <Hero />
+      <Industries />
+      <Introduction />
     </div>
   );
 };

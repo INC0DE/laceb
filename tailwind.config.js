@@ -28,8 +28,7 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     colors: {
-      white: "#E4E4E7",
-      whitelight: "#FFFFFF",
+      white: "#FFFFFF",
       blue: "#2e3192",
       purple: "#7e5bef",
       pink: "#ff49db",
