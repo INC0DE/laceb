@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {Button, ButtonGroup} from "@heroui/button";
+import { Button, ButtonGroup } from "@heroui/button";
 
 const Hero = () => {
   return (
@@ -15,8 +15,8 @@ const Hero = () => {
       />
 
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-        <h1 className="text-[25px] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white mb-4">
-          LACEB S.A DE C.V LABORATORIO DE CALIBRACIÓN
+        <h1 className="text-[35px] font-semibold md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white mb-4">
+          <span className="text-[40px] md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-orange font-bold">LACEB S.A DE C.V</span> LABORATORIO DE CALIBRACIÓN
         </h1>
 
         <div className="bg-orange w-1/2 h-1 xl:h-2"></div>
@@ -25,7 +25,9 @@ const Hero = () => {
           Especializados en pipetas de pistón.
         </p>
 
-        <Button className="bg-blue text-white" size="lg">Cotiza Ahora</Button>
+        <Button className="bg-blue text-white" size="lg">
+          Cotiza Ahora
+        </Button>
 
         <div className="mt-10 text-base md:text-xl lg:text-3xl text-white">
           Calibración | Mantenimiento | Volumen

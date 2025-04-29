@@ -31,9 +31,9 @@ const Findings = () => {
   return (
     <div className="py-10">
       <div className="flex flex-col items-center gap-3 mb-5">
-        <div>
+        <div className="flex flex-col">
           <h1 className="text-blue text-5xl md:text-6xl font-semibold">Recomendaciones</h1>
-          <div className="w-64 h-2 justify-self-center bg-orange"></div>
+          <div className="w-64 h-2 self-center bg-orange"></div>
         </div>
 
         <p className="text-xl md:text-3xl">Mejore sus resultados.</p>
