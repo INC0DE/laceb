@@ -1,6 +1,9 @@
 import Hero from "./Home/Hero";
 import Industries from "./Home/Industries";
 import Introduction from "./Home/Introduction";
+import Brands from "./Home/Brands";
+import Companies from "./Home/Companies";
+import Findings from "./Home/Findings";
 
 const Home = () => {
   return (
@@ -8,6 +11,9 @@ const Home = () => {
       <Hero />
       <Industries />
       <Introduction />
+      <Brands />
+      <Companies />
+      <Findings />
     </div>
   );
 };

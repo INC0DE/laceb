@@ -37,6 +37,7 @@ module.exports = {
       yellow: "#ffd058",
       black: "#030712",
       gray: "#A1A1AA",
+      bg:"#e5e5e5"
     },
     spacing: {
       0: "0",
@@ -75,7 +76,17 @@ module.exports = {
       2.5: "0.625rem",
       3.5: "0.875rem",
     },
-    extend: {},
+    extend: {
+      animation: {
+        scroll: "scroll 20s linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+      },
+    },
   },
   plugins: [
     heroui({

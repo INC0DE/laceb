@@ -4,7 +4,7 @@ import {Button, ButtonGroup} from "@heroui/button";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen">
+    <section className="relative w-full h-screen">
       <Image
         src="/assets/hero.jpg"
         alt="herolaceb"
@@ -31,7 +31,7 @@ const Hero = () => {
           Calibración | Mantenimiento | Volumen
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

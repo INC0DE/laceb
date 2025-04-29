@@ -13,6 +13,9 @@ export const metadata = {
   title: "LACEB",
   description:
     "Laboratorio de calibración especializado en pipetas de pistón volumen",
+  icons: {
+    icon: "/Favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

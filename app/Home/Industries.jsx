@@ -204,14 +204,14 @@ const edges = [
 
 const Industries = () => {
   return (
-    <div className="">
+    <section className="">
       <div className="flex flex-col gap-3 p-10">
         <div>
-          <h1 className="text-5xl lg:text-6xl text-blue font-semibold lg:px-10">Industrias</h1>
-          <div className="w-60 lg:w-64 h-2 bg-orange"></div>
+          <h1 className="text-5xl lg:text-6xl 2xl:text-8xl text-blue font-semibold lg:px-10">Industrias</h1>
+          <div className="w-60 lg:w-64 2xl:w-80 h-2 bg-orange"></div>
         </div>
 
-        <p className="text-gray lg:text-2xl">
+        <p className="text-gray lg:text-2xl lg:px-10">
           Trabajamos para la industria que necesitas.
         </p>
       </div>
@@ -227,7 +227,7 @@ const Industries = () => {
           ></ReactFlow>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
