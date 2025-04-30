@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="lg:h-60 w-full flex flex-col gap-10 bg-blue px-5 pt-5">
+    <div className="lg:h-56 w-full flex flex-col gap-10 bg-blue px-5 pt-5">
       <div className="flex flex-col-reverse gap-5 items-center lg:flex-row lg:justify-around">
-        <div className="content-center">
+        <div className="self-center">
           <Image
-            src="/LACEB.png"
+            src="/LACEBwhite.png"
             alt="herolaceb"
-            width={200}
+            width={250}
             height={100}
             priority
           />

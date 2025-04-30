@@ -1,9 +1,12 @@
 import React from "react";
+import Hero from "./components/Hero";
+import Intro from "../Calibracion/components/Intro";
 
 const calibracion = () => {
   return (
-    <div>
-      <h1>calib</h1>
+    <div className="overflow-hidden">
+      <Hero />
+      <Intro />
     </div>
   );
 };

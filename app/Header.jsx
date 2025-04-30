@@ -1,5 +1,4 @@
 "use client";
-
 import {
   Navbar,
   NavbarBrand,
@@ -196,7 +195,7 @@ const Header = () => {
 
       {typeof window !== "undefined" && (
         <NavbarMenu className="sm:hidden bg-white shadow-lg rounded-lg p-4">
-          {menuItems.map(({ item, services, href }, index) => (
+          {menuItems.map(({ item, href }, index) => (
             <NavbarMenuItem key={`${href}-${index}`}>
               <Link
                 href={href}

@@ -32,7 +32,7 @@ const Findings = () => {
     <div className="py-10">
       <div className="flex flex-col items-center gap-3 mb-5">
         <div className="flex flex-col">
-          <h1 className="text-blue text-5xl md:text-6xl font-semibold">Recomendaciones</h1>
+          <h1 className="text-blue text-5xl md:text-6xl font-medium">Recomendaciones</h1>
           <div className="w-64 h-2 self-center bg-orange"></div>
         </div>
 
@@ -49,7 +49,7 @@ const Findings = () => {
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-2xl"></div>
 
             <div className="relative z-10 flex flex-col gap-4">
-              <h1 className="text-4xl font-semibold">{items.title}</h1>
+              <h1 className="text-4xl font-medium">{items.title}</h1>
               <p className="text-sm">{items.description}</p>
               <Button color="primary" className="self-end">
                 Conoce Más

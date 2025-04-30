@@ -1,11 +1,15 @@
-import React from 'react'
+import Hero from "./components/Hero";
+import Intro from "./components/Intro";
+import Questions from "./components/Questions";
 
 const mantenimiento = () => {
   return (
-    <div>
-      <h1>mantenimiento</h1>
+    <div className="overflow-hidden">
+      <Hero />
+      <Intro />
+      <Questions />
     </div>
-  )
-}
+  );
+};
 
-export default mantenimiento
+export default mantenimiento;

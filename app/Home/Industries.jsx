@@ -31,9 +31,9 @@ const nodes = [
           }}
         >
           <img
-            src="/icons/food.svg"
+            src="/assets/industries/alimentaria.png"
             alt="Alimentaria"
-            style={{ width: 40, height: 40 }}
+            style={{ width: 90, height: 90 }}
           />
           <span>Alimentaria</span>
         </div>
@@ -55,9 +55,9 @@ const nodes = [
           }}
         >
           <img
-            src="/icons/food.svg"
+            src="/assets/industries/farmaceutica.png"
             alt="Alimentaria"
-            style={{ width: 40, height: 40 }}
+            style={{ width: 90, height: 90 }}
           />
           <span>Farmaceutica</span>
         </div>
@@ -79,9 +79,9 @@ const nodes = [
           }}
         >
           <img
-            src="/icons/food.svg"
+            src="/assets/industries/quimica.png"
             alt="Alimentaria"
-            style={{ width: 40, height: 40 }}
+            style={{ width: 90, height: 90 }}
           />
           <span>Quimica</span>
         </div>
@@ -103,9 +103,9 @@ const nodes = [
           }}
         >
           <img
-            src="/icons/food.svg"
+            src="/assets/industries/cosmetica.png"
             alt="Alimentaria"
-            style={{ width: 40, height: 40 }}
+            style={{ width: 90, height: 90 }}
           />
           <span>Cosmetica</span>
         </div>
@@ -127,9 +127,9 @@ const nodes = [
           }}
         >
           <img
-            src="/icons/food.svg"
+            src="/assets/industries/veterinaria.png"
             alt="Alimentaria"
-            style={{ width: 40, height: 40 }}
+            style={{ width: 90, height: 90 }}
           />
           <span>Veterinaria</span>
         </div>
@@ -151,9 +151,9 @@ const nodes = [
           }}
         >
           <img
-            src="/icons/food.svg"
+            src="/assets/industries/clinico.png"
             alt="Alimentaria"
-            style={{ width: 40, height: 40 }}
+            style={{ width: 90, height: 90 }}
           />
           <span>Clinico</span>
         </div>
@@ -207,7 +207,7 @@ const Industries = () => {
     <section className="">
       <div className="flex flex-col gap-3 p-10">
         <div>
-          <h1 className="text-5xl lg:text-6xl 2xl:text-8xl text-blue font-semibold lg:px-10">Industrias</h1>
+          <h1 className="text-5xl lg:text-6xl 2xl:text-8xl text-blue font-medium lg:px-10">Industrias</h1>
           <div className="w-60 lg:w-64 2xl:w-80 h-2 bg-orange"></div>
         </div>
 

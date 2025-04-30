@@ -65,7 +65,7 @@ const Companies = () => {
   return (
     <section className="h-screen py-8 bg-bg flex flex-col  lg:p-0 lg:flex-row items-center">
       <div className="lg:w-1/2 flex flex-col gap-5 items-center">
-        <h1 className="text-4xl md:text-6xl xl:text-7xl text-blue font-semibold">
+        <h1 className="text-4xl md:text-6xl xl:text-7xl text-blue font-medium">
           Nuestros Clientes
         </h1>
         <p className="text-xl md:text-2xl xl:text-3xl text-gray">
@@ -108,7 +108,7 @@ const Companies = () => {
                 className="rounded object-cover"
               />
               <div>
-                <h3 className="text-green text-xl font-bold">
+                <h3 className="text-green text-xl font-medium">
                   {cliente.titulo}
                 </h3>
                 <p className="text-gray text-sm">{cliente.comentario}</p>

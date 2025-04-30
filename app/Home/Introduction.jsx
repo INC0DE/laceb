@@ -11,7 +11,7 @@ const cards = [
   },
   {
     id: 2,
-    icon: "/assets/pipeta.png",
+    icon: "/assets/calificado.png",
     title: "PERSONAL ALTAMENTE CALIFICADO",
     text: "Contamos con un excelente equipo humano profesional, capacitado y comprometido con la labor que cada uno desempeña, complementado con equipos de alta calidad metrológica. ",
   },
@@ -22,7 +22,7 @@ const Introduction = () => {
     <section className="bg-blue flex flex-col gap-20 px-3 lg:px-10 py-16">
       <div className="flex flex-col text-white">
         <h1 className="text-5xl lg:text-7xl 2xl:text-9xl">Mantenimiento y</h1>
-        <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-semibold">
+        <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-medium">
           <span className="text-green">CALIBRACIÓN</span> DE PIPETAS DE PISTÓN
         </h1>
         <p className="lg:w-1/2 self-center text-center text-xl mt-10">
@@ -47,7 +47,7 @@ const Introduction = () => {
               height={100}
               priority
             />
-            <h1 className="text-4xl font-bold">{items.title}</h1>
+            <h1 className="text-4xl font-medium">{items.title}</h1>
             <div className="flex flex-row gap-3">
               <div className="w-2 h-24 bg-orange"></div>
               <p className="text-gray text-sm self-center">{items.text}</p>

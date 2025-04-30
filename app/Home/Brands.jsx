@@ -65,7 +65,7 @@ const Brands = () => {
     <section className="w-full">
       <div className="flex flex-col gap-3 p-10">
         <div>
-          <h1 className="text-5xl lg:text-6xl 2xl:text-8xl text-blue font-semibold lg:px-10">
+          <h1 className="text-5xl lg:text-6xl 2xl:text-8xl text-blue font-medium lg:px-10">
             Marcas
           </h1>
           <div className="w-60 lg:w-64 2xl:w-80 h-2 bg-orange"></div>
