@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="lg:h-56 w-full flex flex-col gap-10 bg-blue px-5 pt-5">
-      <div className="flex flex-col-reverse gap-5 items-center lg:flex-row lg:justify-around">
+      <div className="flex flex-col gap-5 items-center lg:flex-row lg:justify-around">
         <div className="self-center">
           <Image
             src="/LACEBwhite.png"
