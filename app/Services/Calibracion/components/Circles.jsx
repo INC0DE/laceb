@@ -20,7 +20,7 @@ const cards = [
     background: "/assets/volumen.jpg",
   },
   {
-    title: "Automaticas y semiautomatricas",
+    title: "Automáticas y semiautomátricas",
     description:
       "Cálculo de resultados y comparación con los límites de aprobación/rechazo.",
     background: "/assets/auto.jpg",

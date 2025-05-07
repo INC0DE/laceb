@@ -14,7 +14,7 @@ const Hero = () => {
         priority
       />
 
-      <div className="absolute inset-0 flex flex-col gap-5 justify-center px-4 md:px-8">
+      <div className="absolute inset-0 flex flex-col gap-5 justify-center px-1 md:px-8">
         <h1 className="text-5xl md:text-6xl lg:text-8xl text-white font-medium">MANTENIMIENTO</h1>
         <div className="w-72 h-2 bg-orange"></div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-white">

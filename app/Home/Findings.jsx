@@ -46,10 +46,9 @@ const cards = [
   {
     id: 3,
     title: "ERGONOMÍA",
-    description:
-      "De todos los factores que contribuyen al buen funcionamiento de una pipeta, el más crítico es la habilidad del operador",
+    description: "El cansancio en manos y cuerpo puede provocar errores.",
     img: "/assets/ergonomia.jpeg",
-    contentimg:"/assets/tipsmodal.png",
+    contentimg: "/assets/tipsmodal.png",
   },
 ];
 
@@ -92,11 +91,17 @@ const Findings = () => {
               </Button>
             </div>
 
-            <Modal size="xl" isOpen={selectedCard === item.id} onOpenChange={handleClose}>
+            <Modal
+              size="xl"
+              isOpen={selectedCard === item.id}
+              onOpenChange={handleClose}
+            >
               <ModalContent>
                 {(onClose) => (
                   <>
-                    <ModalHeader className="text-blue">{item.title}</ModalHeader>
+                    <ModalHeader className="text-blue">
+                      {item.title}
+                    </ModalHeader>
                     <ModalBody>
                       {Array.isArray(item.content) ? (
                         <ul className="list-decimal pl-5 space-y-2">
@@ -105,8 +110,8 @@ const Findings = () => {
                           ))}
                         </ul>
                       ) : (
-                        <p>{item.content}</p>,
-                        <img src={item.contentimg} alt="" />
+                        ((<p>{item.content}</p>),
+                        (<img src={item.contentimg} alt="" />))
                       )}
                     </ModalBody>
                     <ModalFooter>

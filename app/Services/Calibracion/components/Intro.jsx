@@ -37,7 +37,7 @@ const Intro = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <section className="p-5 lg:p-10">
-      <div className="bg-bg p-8 rounded-full">
+      <div className="bg-bg p-8 rounded-3xl md:rounded-full">
         <p className="text-center">
           La calibración se realiza por el método gravimétrico establecido por
           la Norma ISO 8655-6:2002 Gravimetric methods for the determination of

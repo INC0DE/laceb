@@ -9,11 +9,11 @@ const cards = [
     title: "Limpieza",
     img: "/assets/limpieza.jpg",
     description:
-      "Desinfectamos con una solución  electrolizada de superoxidación que tiene una acción germicida de amplio espectro contra virus, hongos y bacterias, incluso contra esporas.",
+      "Apertura, limpieza y engrase de pistones, conos de punta y cualquier sello asociado. ",
   },
   {
     id: 2,
-    title: "Desinfeccion",
+    title: "Desinfección",
     img: "/assets/desinfeccion.jpg",
     description:
       "Desinfectamos con una solución  electrolizada de superoxidación que tiene una acción germicida de amplio espectro contra virus, hongos y bacterias, incluso contra esporas.",
@@ -23,7 +23,7 @@ const cards = [
     title: "Comprobación",
     img: "/assets/comprobacion.jpg",
     description:
-      "Desinfectamos con una solución  electrolizada de superoxidación que tiene una acción germicida de amplio espectro contra virus, hongos y bacterias, incluso contra esporas.",
+      "Comprobación de la exactitud y precisión de la pipeta con diez mediciones por volumen en tres puntos de la escala (generalmente seleccionado de mínimo o 10%, 50% y 100% del volumen nominal de la pipeta). ",
   },
 ];
 
@@ -32,7 +32,10 @@ const Intro = () => {
     <section className="flex flex-col gap-20 py-10">
       <div className="flex flex-col gap-10">
         <h1 className="text-4xl lg:text-6xl font-medium text-center">
-          EN <span className="text-blue font-bold text-5xl lg:text-8xl">LACEB S.A DE C.V </span>
+          EN{" "}
+          <span className="text-blue font-bold text-5xl lg:text-8xl">
+            LACEB S.A DE C.V{" "}
+          </span>
           NUESTRO MANTENIMIENTO CONCISTE EN:
         </h1>
 
