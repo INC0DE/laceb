@@ -1,6 +1,15 @@
+"use client";
 import React from "react";
 import { Card } from "@heroui/card";
 import Image from "next/image";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
+} from "@heroui/modal";
 import { Button } from "@heroui/button";
 import { CircleCheck } from "lucide-react";
 
@@ -25,6 +34,7 @@ const cards = [
 ];
 
 const Intro = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <section className="p-5 lg:p-10">
       <div className="bg-bg p-8 rounded-full">
@@ -76,12 +86,6 @@ const Intro = () => {
 
             <div className="absolute inset-0 space-y-5 p-5 content-end">
               <h1 className="text-4xl text-white font-medium">CALIBRACIONES</h1>
-              <Button
-                size="lg"
-                className="bg-white text-green rounded-3xl ml-4"
-              >
-                Ver
-              </Button>
               <ul className="text-gray">
                 <li>Micropipetas de pistón.</li>
                 <li>Monocanal y multicanal</li>
@@ -93,9 +97,36 @@ const Intro = () => {
 
           <div className="h-1/3 bg-blue rounded-b-3xl space-y-5 p-5">
             <h1 className="text-4xl text-white font-medium">ACREDITACIÓN</h1>
-            <Button size="lg" className="bg-white text-green rounded-3xl ml-4">
+            <Button
+              onPress={onOpen}
+              size="lg"
+              className="bg-white text-green rounded-3xl ml-4"
+            >
               Ver
             </Button>
+            <Modal size="xl" isOpen={isOpen} onOpenChange={onOpenChange}>
+              <ModalContent>
+                {(onClose) => (
+                  <>
+                    <ModalBody>
+                      <Image
+                        src="/assets/CertificadoEMA.jpg"
+                        alt="certificado"
+                        width={100}
+                        height={100}
+                        className=" w-full "
+                        priority
+                      />
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button color="danger" variant="light" onPress={onClose}>
+                        Close
+                      </Button>
+                    </ModalFooter>
+                  </>
+                )}
+              </ModalContent>
+            </Modal>
           </div>
         </div>
       </div>

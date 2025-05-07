@@ -37,9 +37,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }) => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <div className="px-6 py-4 text-sm">
-              {answer}
-            </div>
+            <div className="px-6 py-4 text-sm">{answer}</div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -55,23 +53,25 @@ const Questions = () => {
     },
     {
       question: "¿QUÉ MARCAS DE PIPETAS CALIBRAN?",
-      answer: "Todas las marcas comerciales del mercado.",
+      answer: "Calibramos todas las marcas.",
     },
     {
       question: "¿QUÉ INSTRUMENTOS CALIBRAN?",
-      answer: "Pipetas, balanzas, termómetros, entre otros.",
+      answer:
+        "Somos un laboratorio especializado en la calibración de pipetas de pistón.",
     },
     {
       question: "¿CUENTAN CON ALGUNA ACREDITACIÓN?",
-      answer: "Sí, estamos acreditados por la EMA.",
+      answer:
+        "Si, somos un laboratorio acreditado con la norma ISO 17025: 2017 ante la Entidad Mexicana de Acreditación (ema)..",
     },
     {
       question: "¿PROPORCIONAN SERVICIO A TODA LA REPÚBLICA MEXICANA?",
-      answer: "Sí, enviamos técnicos y equipos a toda la República.",
+      answer: "Si, damos el servicio en todo México.",
     },
     {
       question: "¿CON QUÉ FRECUENCIA DEBO CALIBRAR LAS PIPETAS?",
-      answer: "Se recomienda cada 6 o 12 meses dependiendo del uso.",
+      answer: "Por lo menos una vez al año.",
     },
   ];
 

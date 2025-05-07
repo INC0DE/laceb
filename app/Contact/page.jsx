@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
+import Link from "next/link";
 import { Button } from "@heroui/button";
 import { Form } from "@heroui/form";
 import { Input, Textarea } from "@heroui/input";
@@ -28,14 +29,14 @@ const contact = () => {
       );
   };
   return (
-    <section className="flex flex-col bg-bg">
+    <section className="h-screen flex flex-col bg-bg">
       <div className="w-full h-44 bg-blue content-center">
         <h1 className="text-white text-5xl md:text-6xl font-medium ml-4 lg:ml-10">
           CONTACTO.
         </h1>
       </div>
 
-      <div className="w-full justify-items-center space-y-10 relative pb-10">
+      <div className="w-full h-full justify-items-center content-center space-y-10 relative pb-10">
         <Image
           src="/assets/tips.jpg"
           alt="herolaceb"
@@ -105,9 +106,11 @@ const contact = () => {
           </p>
         )}
 
-        <Button className="bg-orange" size="lg">
-          Aviso de privacidad
-        </Button>
+        <Link href="/Privacy">
+          <Button className="bg-orange" size="lg">
+            Aviso de privacidad
+          </Button>
+        </Link>
       </div>
     </section>
   );

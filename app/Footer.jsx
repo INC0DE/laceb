@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,6 +15,8 @@ const Footer = () => {
           />
         </div>
 
+        <div className="w-full h-1 lg:h-full lg:w-1 bg-white"></div>
+
         <div className="flex flex-col text-white gap-3 text-center lg:text-left">
           <div className="">
             <h1 className="font-semibold">Contacto.</h1>
@@ -28,12 +31,14 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="w-full h-1 lg:h-full lg:w-1 bg-white"></div>
+
         <div className="flex flex-col text-white gap-3">
           <div>
             <h1 className="font-semibold">Enlaces de interes.</h1>
-            <a href="">
+            <Link href="/Privacy">
               <p className="underline"> Aviso de Privacidad</p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
