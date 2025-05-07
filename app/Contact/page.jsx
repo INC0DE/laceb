@@ -36,7 +36,7 @@ const contact = () => {
         </h1>
       </div>
 
-      <div className="w-full h-full justify-items-center content-center space-y-10 relative pb-10">
+      <div className="w-full h-full flex flex-col items-center justify-center space-y-10 relative pb-10">
         <Image
           src="/assets/tips.jpg"
           alt="herolaceb"
