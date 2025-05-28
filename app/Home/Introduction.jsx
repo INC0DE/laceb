@@ -21,14 +21,14 @@ const Introduction = () => {
   return (
     <section className="bg-blue flex flex-col gap-20 px-3 lg:px-10 py-16">
       <div className="flex flex-col text-white">
-        <h1 className="text-5xl lg:text-7xl 2xl:text-9xl">Mantenimiento y</h1>
-        <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-medium">
-          <span className="text-green">CALIBRACIÓN</span> DE PIPETAS DE PISTÓN
+        <h1 className="text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl">Mantenimiento y</h1>
+        <h1 className="text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-medium">
+          <span className="text-green">calibración</span> de pipetas de pistón
         </h1>
-        <p className="lg:w-1/2 self-center text-center text-xl mt-10">
+        <p className="lg:w-1/2 self-center text-center lg:text-xl mt-10">
           Realizamos nuestras calibraciones por el método gravimétrico de
-          conformidad con las Normas NMX-EC-17025-IMNC-2018 ISO/IEC 17025:2017.
-          Requisitos generales para la competencia de los laboratorios de ensayo
+          conformidad con las Normas NMX-EC-17025-IMNC-2018 ISO/IEC 17025:2017
+          requisitos generales para la competencia de los laboratorios de ensayo
           y calibración e ISO 8655-6 Gravimetric methods for the determination
           of measurement.
         </p>

@@ -15,7 +15,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 flex flex-col gap-5 justify-center items-center px-4 md:px-8">
         <h1 className="text-4xl text-center md:text-6xl lg:text-8xl text-white font-medium">
-          SOMOS LACEB S.A DE C.V
+          SOMOS LACEB S.A. DE C.V.
         </h1>
         <Image
           src="/Favicon.png"

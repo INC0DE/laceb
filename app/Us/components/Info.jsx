@@ -39,11 +39,11 @@ const Info = () => {
     <section>
       <div>
         <p className="text-center text-xl md:text-3xl p-10">
-          Empresa mexicana especialistas en la {""}
+          Empresa mexicana especializada en la {""}
           <span className="font-semibold">
-            calibración de pipetas de pistón
+            calibración de pipetas de pistón 
           </span>
-          {""}
+          {" "}
           desde el año {""} <span className="font-semibold">2012</span>, con una
           cartera de clientes conformada por más de
           {""}{" "}
@@ -76,16 +76,16 @@ const Info = () => {
       </div>
 
       <div className="py-10">
-        <div className="text-4xl lg:text-7xl text-center p-10">
+        <div className="text-4xl lg:text-6xl text-center p-10">
           <h1 className="">
             En{" "}
-            <span className="text-5xl lg:text-8xl font-semibold text-blue">
-              LACEB S.A DE C.V
+            <span className="text-5xl lg:text-7xl font-semibold text-blue">
+              LACEB S.A. DE C.V.
             </span>{" "}
           </h1>
           <h1 className="">
             somos fieles a nuestros{" "}
-            <span className="text-5xl lg:text-8xl font-semibold">VALORES</span>{" "}
+            <span className="text-5xl lg:text-7xl font-semibold">VALORES</span>{" "}
           </h1>
         </div>
 

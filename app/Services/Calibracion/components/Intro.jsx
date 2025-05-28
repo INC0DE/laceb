@@ -18,7 +18,7 @@ const cards = [
     id: 1,
     title: "Comprobación",
     description:
-      "Comprobamos la exactitud y precisión de la pipeta con diez mediciones por volumen en tres puntos de la escala (generalmente seleccionado de mínimo o 10%, 50% y 100% del volumen nominal de la pipeta).",
+      "Comprobamos la exactitud y precisión de la pipeta con diez mediciones por volumen en tres puntos de la escala (generalmente seleccionando el mínimo o 10%, 50% y 100% del volumen nominal de la pipeta).",
   },
   {
     id: 2,
@@ -29,7 +29,8 @@ const cards = [
   {
     id: 3,
     title: "Certificado",
-    description: "Emisión de un certificado de calibración.",
+    description:
+      "El certificado de calibración que se entrega cumple con los requisitos de la Norma ISO/IEC 17025:2017",
   },
 ];
 
@@ -80,16 +81,16 @@ const Intro = () => {
               alt="herolaceb"
               layout="fill"
               objectFit="cover"
-              className="brightness-50 w-full rounded-t-3xl"
+              className="brightness-75 w-full rounded-t-3xl"
               priority
             />
 
             <div className="absolute inset-0 space-y-5 p-5 content-end">
               <h1 className="text-4xl text-white font-medium">CALIBRACIONES</h1>
-              <ul className="text-gray">
-                <li>Micropipetas de pistón.</li>
+              <ul className="text-gray font-semibold">
+                <li>Micropipetas de pistón</li>
                 <li>Monocanal y multicanal</li>
-                <li>De volumen fijo y Variable</li>
+                <li>De volumen fijo y variable</li>
                 <li>Automáticas y semiautomáticas</li>
               </ul>
             </div>
@@ -104,6 +105,14 @@ const Intro = () => {
             >
               Ver
             </Button>
+            <Image
+              src="/assets/emacredition.png"
+              alt="herolaceb"
+              className="justify-self-end"
+              width={200}
+              height={200}
+              priority
+            />
             <Modal size="xl" isOpen={isOpen} onOpenChange={onOpenChange}>
               <ModalContent>
                 {(onClose) => (
@@ -137,7 +146,7 @@ const Intro = () => {
           Prácticas de Laboratorio (BPL) y de los sistemas de calidad. El
           rendimiento de la pipeta se mide como exactitud y precisión, lo que
           significa qué tan cerca están los volúmenes dispensados del objetivo y
-          qué tan cerca están los resultados de uno entre otro.
+          qué tan cerca están los resultados uno de otro.
         </p>
       </div>
     </section>

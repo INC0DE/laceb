@@ -23,7 +23,7 @@ const cards = [
     title: "Comprobación",
     img: "/assets/comprobacion.jpg",
     description:
-      "Comprobación de la exactitud y precisión de la pipeta con diez mediciones por volumen en tres puntos de la escala (generalmente seleccionado de mínimo o 10%, 50% y 100% del volumen nominal de la pipeta). ",
+      "Comprobación de la exactitud y precisión de la pipeta con diez mediciones por volumen en tres puntos de la escala (generalmente seleccionando el mínimo o 10%, 50% y 100% del volumen nominal de la pipeta). ",
   },
 ];
 
@@ -32,17 +32,17 @@ const Intro = () => {
     <section className="flex flex-col gap-20 py-10">
       <div className="flex flex-col gap-10">
         <h1 className="text-4xl lg:text-6xl font-medium text-center">
-          EN{" "}
+          El  {""}
           <span className="text-blue font-bold text-5xl lg:text-8xl">
-            LACEB S.A DE C.V{" "}
+            MANTENIMIENTO {""}
           </span>
-          NUESTRO MANTENIMIENTO CONCISTE EN:
+          QUE REALIZAMOS CONSISTE EN:
         </h1>
 
         <div className="w-2/3 bg-bg p-16 rounded-r-full">
           <p className="md:text-2xl">
             Todos los fabricantes de pipetas recomiendan programas de
-            mantenimiento preventivo para mantener resultados de pipeteo fiables
+            mantenimiento preventivo para mantener resultados fiables
             y maximizar la vida útil de la pipeta.
           </p>
         </div>

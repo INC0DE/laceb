@@ -85,7 +85,7 @@ const Questions = () => {
         </div>
 
         <div className="w-56 lg:w-72 h-2 bg-orange"></div>
-        <p className="text-3xl lg:text-4xl">Queremos resolver tus dudas.</p>
+        <p className="text-3xl lg:text-4xl">Queremos resolver tus dudas</p>
       </div>
 
       <div className="max-w-6xl mx-auto my-10 px-4">

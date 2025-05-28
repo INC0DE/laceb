@@ -69,7 +69,7 @@ const Companies = () => {
           Nuestros Clientes
         </h1>
         <p className="text-xl md:text-2xl xl:text-3xl text-gray">
-          Empresas que confiaron en nosotros.
+          Empresas que confían en nosotros
         </p>
         <Image
           src="/Favicon.png"

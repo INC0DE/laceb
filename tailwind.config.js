@@ -36,7 +36,7 @@ module.exports = {
       green: "#00bf63",
       yellow: "#ffd058",
       black: "#030712",
-      gray: "#A1A1AA",
+      gray: "#111827",
       bg:"#e5e5e5"
     },
     spacing: {

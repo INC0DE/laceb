@@ -19,7 +19,7 @@ const Hero = () => {
         </h1>
         <div className="w-72 h-2 bg-orange"></div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-white">
-          Volumen . Micropopetas
+          Volumen. Micropipetas
         </h1>
       </div>
     </section>

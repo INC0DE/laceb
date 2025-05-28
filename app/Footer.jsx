@@ -19,7 +19,7 @@ const Footer = () => {
 
         <div className="flex flex-col text-white gap-3 text-center lg:text-left">
           <div className="">
-            <h1 className="font-semibold">Contacto.</h1>
+            <h1 className="font-semibold">Contacto</h1>
             <p>Tel. 5539669986</p>
             <p>servicio@laceb-lab.com</p>
           </div>
@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="flex flex-col text-white gap-3">
           <div>
-            <h1 className="font-semibold">Enlaces de interes.</h1>
+            <h1 className="font-semibold">Enlaces de interes</h1>
             <Link href="/Privacy">
               <p className="underline"> Aviso de Privacidad</p>
             </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-row text-white font-semibold text-sm justify-center gap-10">
-        <h1>LACEB S.A DE C.V © 2025.</h1>
+        <h1>LACEB S.A. DE C.V. © 2025.</h1>
         <h1>All rights reserved.</h1>
       </div>
     </div>

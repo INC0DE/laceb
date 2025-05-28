@@ -37,7 +37,7 @@ const cards = [
     img: "/assets/tips.jpg",
     content: [
       "Seleccione la pipeta apropiada: Ejemplo: Cuando desee pipetear 10 μL de líquido, use una pipeta con el rango de volumen de 0,5 a 10 μL en lugar de una pipeta con un volumen de 10 a 100 μL.",
-      "Presta atención a las condiciones ambientales: El volumen varía con la temperatura. Todo debe estar entre 20 y 22°C.",
+      "Preste atención a las condiciones ambientales: El volumen varía con la temperatura. Todo debe estar entre 20 y 22°C.",
       "Considere el humedecimiento previo de la punta: Aspire y dispense al menos tres veces antes de usarla.",
       "Minimice la manipulación: Evite calentar la pipeta con la mano. Déjela en el soporte entre usos.",
       "Limpie y calibre su pipeta regularmente: Use alcohol isopropílico y calibre al menos una vez al año.",
@@ -67,7 +67,7 @@ const Findings = () => {
           </h1>
           <div className="w-64 h-2 self-center bg-orange"></div>
         </div>
-        <p className="text-xl md:text-3xl">Mejore sus resultados.</p>
+        <p className="text-xl md:text-3xl">Mejore sus resultados</p>
       </div>
 
       <div className="flex flex-col gap-5 lg:flex-row justify-around xl:gap-0">
