@@ -5,18 +5,18 @@ import clsx from "clsx";
 
 const clientes = [
   {
-    titulo: "EMPRESA 1",
+    titulo: " Institutos Nacionales de Salud Empresa",
     comentario: "Comentario de la empresa",
     imagen: "/empresa1.jpg",
   },
   {
-    titulo: "EMPRESA 2",
+    titulo: "Hospitales Generales de la Secretaría de Salud",
     comentario:
       "De todos los factores que contribuyen al buen funcionamiento de una pipeta, el más crítico es la habilidad del operador",
     imagen: "/empresa2.jpg",
   },
   {
-    titulo: "EMPRESA 3",
+    titulo: "Distribuidores de reactivos y equipos médicos",
     comentario: "El cansancio en manos y cuerpo puede provocar errores.",
     imagen: "/empresa3.jpg",
   },
@@ -100,18 +100,19 @@ const Companies = () => {
               )}
               style={{ minHeight: `${CARD_HEIGHT - 20}px` }} // para dejar margen
             >
-              <Image
+              {/* <Image
                 src={cliente.imagen}
                 alt={cliente.titulo}
                 width={100}
                 height={100}
                 className="rounded object-cover"
-              />
+              /> */}
+
               <div>
-                <h3 className="text-green text-xl font-medium">
+                <h3 className="text-orange text-lg font-medium">
                   {cliente.titulo}
                 </h3>
-                <p className="text-gray text-sm">{cliente.comentario}</p>
+               
               </div>
             </div>
           );

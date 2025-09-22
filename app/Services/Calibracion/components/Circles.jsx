@@ -16,13 +16,13 @@ const cards = [
   {
     title: "Volumen fijo y variable",
     description:
-      ": Las pipetas de volumen fijo aspiran y dispensan un volumen predefinido, mientras que las de volumen variable permiten ajustar el volumen a transferir",
+      "Las pipetas de volumen fijo aspiran y dispensan un volumen predefinido, mientras que las de volumen variable permiten ajustar el volumen a transferir",
     background: "/assets/micro.jpg",
   },
   {
     title: "Automáticas y semiautomáticas",
     description:
-      "micropipetas que funcionan mediante un sistema de aspiración y dispensado controlado electrónica o manualmente",
+      "Micropipetas que funcionan mediante un sistema de aspiración y dispensado controlado electrónica o manualmente",
     background: "/assets/auto.jpg",
   },
 ];
