@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Wrench, Settings, PenTool, Shield, ArrowRight } from "lucide-react";
 import gsap from "gsap";
@@ -227,7 +228,7 @@ const Hero = () => {
           {/* Título principal */}
           <h1
             ref={titleRef}
-            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-bold text-white mb-4 leading-none"
+            className="text-4xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-bold text-white mb-4 leading-none"
           >
             MANTENIMIENTO
           </h1>
@@ -269,13 +270,15 @@ const Hero = () => {
 
           {/* Botón CTA */}
           <div ref={buttonRef} className="mt-12">
-            <button className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-accent-500 to-accent-600 text-white font-semibold px-8 py-4 rounded-xl overflow-hidden shadow-2xl">
-              <span className="relative z-10 flex items-center gap-2">
-                Solicitar mantenimiento
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-600 to-accent-700 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-            </button>
+            <Link href="/Contact">
+              <button className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-accent-500 to-accent-600 text-white font-semibold px-8 py-4 rounded-xl overflow-hidden shadow-2xl">
+                <span className="relative z-10 flex items-center gap-2">
+                  Solicitar mantenimiento
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-accent-600 to-accent-700 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

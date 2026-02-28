@@ -95,7 +95,7 @@ const Circles = () => {
   return (
     <section
       ref={ref}
-      className="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-white to-neutral-50"
+      className="relative pb-10 lg:py-28 overflow-hidden bg-gradient-to-b from-white to-neutral-50"
     >
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 pointer-events-none">
@@ -106,9 +106,7 @@ const Circles = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Encabezado */}
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          animate={controls}
+        <div
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-800 mb-4">
@@ -122,7 +120,7 @@ const Circles = () => {
             Conoce los diferentes tipos de micropipetas que calibramos con
             precisión y confiabilidad
           </p>
-        </motion.div>
+        </div>
 
         {/* Grid de cards circulares */}
         <motion.div
@@ -225,19 +223,6 @@ const Circles = () => {
               </div>
             ))}
           </div>
-        </motion.div>
-
-        {/* Call to action */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="mt-16 text-center"
-        >
-          <button className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-            <span>Solicitar información</span>
-            <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
         </motion.div>
       </div>
 

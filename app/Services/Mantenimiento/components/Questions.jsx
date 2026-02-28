@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import { Plus, Minus, HelpCircle, Mail, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -233,13 +234,15 @@ const Questions = () => {
                 </div>
               </div>
 
-              <button className="group relative inline-flex items-center gap-2 bg-white text-primary-600 font-semibold px-8 py-4 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                <span className="relative z-10 flex items-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Escríbenos
-                </span>
-                <div className="absolute inset-0 bg-neutral-100 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-              </button>
+              <Link href="/Contact">
+                <button className="group relative inline-flex items-center gap-2 bg-white text-primary-600 font-semibold px-8 py-4 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                  <span className="relative z-10 flex items-center gap-2">
+                    <Mail className="w-5 h-5" />
+                    Escríbenos
+                  </span>
+                  <div className="absolute inset-0 bg-neutral-100 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                </button>
+              </Link>
             </div>
           </div>
         </motion.div>
