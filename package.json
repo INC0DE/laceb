@@ -15,7 +15,7 @@
     "framer-motion": "^12.9.2",
     "lucide-react": "^0.503.0",
     "motion": "^12.7.3",
-    "next": "15.3.0",
+    "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "reactflow": "^11.11.4"
