@@ -12,7 +12,6 @@ const Home = () => {
       <Industries />
       <Introduction />
       <Brands />
-      <Companies />
       <Findings />
     </div>
   );
