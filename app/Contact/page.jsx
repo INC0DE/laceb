@@ -183,21 +183,6 @@ const Contact = () => {
                 </motion.div>
               ))}
             </div>
-
-            {/* Mapa o imagen decorativa */}
-            <div className="relative h-64 rounded-3xl overflow-hidden shadow-xl">
-              <Image
-                src="/assets/tips.jpg"
-                alt="Oficinas LACEB"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <div className="absolute bottom-6 left-6 text-white">
-                <h4 className="text-xl font-bold mb-2">Visítanos</h4>
-                <p className="text-sm opacity-90">Ciudad de México, CDMX</p>
-              </div>
-            </div>
           </motion.div>
 
           {/* Columna derecha - Formulario */}

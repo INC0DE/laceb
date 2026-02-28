@@ -269,32 +269,6 @@ const Brands = () => {
             <div className="text-sm opacity-90">Soporte técnico</div>
           </div>
         </motion.div>
-
-        {/* CTA para más información */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 1.4, duration: 0.6 }}
-          className="mt-12 text-center"
-        >
-          <button className="group relative inline-flex items-center gap-2 px-8 py-4 bg-white text-brand-blue font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-neutral-200">
-            <span className="relative z-10">Ver todas las marcas</span>
-            <svg
-              className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-            <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-accent-50 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-          </button>
-        </motion.div>
       </div>
     </section>
   );

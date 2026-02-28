@@ -117,30 +117,30 @@ const Info = () => {
   return (
     <section
       ref={ref}
-      className="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-white to-neutral-50"
+      className="relative py-16 sm:py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-white to-neutral-50"
     >
-      {/* Elementos decorativos de fondo */}
+      {/* Elementos decorativos de fondo - responsive */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-primary-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-accent-500/5 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-success-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-10 sm:top-20 left-10 sm:left-20 w-48 sm:w-72 h-48 sm:h-72 bg-primary-500/5 rounded-full blur-2xl sm:blur-3xl" />
+        <div className="absolute bottom-10 sm:bottom-20 right-10 sm:right-20 w-56 sm:w-80 h-56 sm:h-80 bg-accent-500/5 rounded-full blur-2xl sm:blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 sm:w-96 h-64 sm:h-96 bg-success-500/5 rounded-full blur-2xl sm:blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Texto introductorio */}
+        {/* Texto introductorio - responsive */}
         <motion.div
           variants={titleVariants}
           initial="hidden"
           animate={controls}
-          className="max-w-5xl mx-auto text-center mb-20"
+          className="max-w-5xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20"
         >
-          <div className="inline-block mb-6">
-            <span className="text-sm font-semibold text-primary-600 uppercase tracking-wider bg-primary-50 px-4 py-2 rounded-full">
+          <div className="inline-block mb-4 sm:mb-6">
+            <span className="text-xs sm:text-sm font-semibold text-primary-600 uppercase tracking-wider bg-primary-50 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">
               Quiénes Somos
             </span>
           </div>
 
-          <p className="text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed px-2 sm:px-4">
             Empresa mexicana especializada en la{" "}
             <span className="font-bold text-primary-600">
               calibración de pipetas de pistón
@@ -154,75 +154,79 @@ const Info = () => {
             de reactivos.
           </p>
 
-          {/* Estadísticas rápidas */}
-          <div className="grid grid-cols-3 gap-4 mt-12 max-w-2xl mx-auto">
+          {/* Estadísticas rápidas - responsive */}
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-8 sm:mt-12 max-w-2xl mx-auto">
             {[
               { number: "2012", label: "Año de fundación" },
               { number: "35+", label: "Laboratorios" },
               { number: "100%", label: "Compromiso" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-2xl font-bold text-primary-600">
+                <div className="text-xl sm:text-2xl font-bold text-primary-600">
                   {stat.number}
                 </div>
-                <div className="text-xs text-neutral-500">{stat.label}</div>
+                <div className="text-[10px] sm:text-xs text-neutral-500">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
         </motion.div>
 
-        {/* Cards de Misión y Visión */}
+        {/* Cards de Misión y Visión - responsive */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={controls}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-32"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-24 sm:mb-28 lg:mb-32"
         >
           {cards.map((card) => (
             <motion.div
               key={card.id}
               variants={itemVariants}
               whileHover={{ y: -8 }}
-              className="group relative h-[400px] perspective-1000"
+              className="group relative h-[450px] sm:h-[400px] md:h-[380px] lg:h-[400px] xl:h-[420px] perspective-1000"
             >
               {/* Efecto de fondo en hover */}
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${card.gradient} rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl`}
+                className={`absolute inset-0 bg-gradient-to-br ${card.gradient} rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl`}
               />
 
               {/* Card principal */}
-              <div className="relative h-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-neutral-200">
+              <div className="relative h-full bg-white rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-neutral-200">
                 {/* Barra superior con gradiente */}
                 <div
-                  className={`h-2 w-full bg-gradient-to-r ${card.gradient}`}
+                  className={`h-1.5 sm:h-2 w-full bg-gradient-to-r ${card.gradient}`}
                 />
 
-                <div className="p-8 lg:p-10">
+                <div className="p-6 sm:p-8 lg:p-10 h-full flex flex-col">
                   {/* Icono con efecto de glow */}
-                  <div className="relative mb-8">
+                  <div className="relative mb-4 sm:mb-6 lg:mb-8">
                     <div
-                      className={`absolute inset-0 ${card.bgLight} rounded-2xl blur-2xl`}
+                      className={`absolute inset-0 ${card.bgLight} rounded-xl sm:rounded-2xl blur-xl sm:blur-2xl`}
                     />
                     <div
-                      className={`relative w-24 h-24 ${card.bgLight} rounded-2xl flex items-center justify-center border ${card.borderColor} group-hover:bg-gradient-to-br ${card.gradient} group-hover:border-white/30 transition-all duration-500`}
+                      className={`relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 ${card.bgLight} rounded-xl sm:rounded-2xl flex items-center justify-center border ${card.borderColor} group-hover:bg-gradient-to-br ${card.gradient} group-hover:border-white/30 transition-all duration-500`}
                     >
-                      {card.icon}
+                      <div className="scale-75 sm:scale-90 lg:scale-100">
+                        {card.icon}
+                      </div>
                     </div>
                   </div>
 
-                  {/* Título */}
+                  {/* Título - SIEMPRE VISIBLE */}
                   <h3
-                    className={`text-4xl font-bold mb-6 bg-gradient-to-r ${card.gradient} bg-clip-text text-transparent group-hover:text-black transition-colors duration-500`}
+                    className={`text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-5 lg:mb-6 text-neutral-900 transition-colors duration-500`}
                   >
                     {card.title}
                   </h3>
 
-                  {/* Contenido con línea decorativa */}
-                  <div className="flex gap-4">
+                  {/* Contenido con línea decorativa - SIEMPRE VISIBLE */}
+                  <div className="flex gap-3 sm:gap-4 flex-1">
                     <div
-                      className={`w-1.5 bg-gradient-to-b ${card.gradient} rounded-full flex-shrink-0 group-hover:bg-white transition-colors duration-500`}
+                      className={`w-1 sm:w-1.5 bg-gradient-to-b ${card.gradient} rounded-full flex-shrink-0 transition-colors duration-500`}
                     />
-                    <p className="text-neutral-600 text-lg leading-relaxed group-hover:text-black transition-colors duration-500">
+                    <p className="text-sm sm:text-base lg:text-lg text-neutral-600 leading-relaxed transition-colors duration-500 line-clamp-6 sm:line-clamp-5 lg:line-clamp-none">
                       {card.description}
                     </p>
                   </div>
@@ -242,81 +246,107 @@ const Info = () => {
           animate={controls}
           className="text-center"
         >
-          {/* Título de valores */}
-          <motion.div variants={titleVariants} className="mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          {/* Título de valores - responsive */}
+          <motion.div
+            variants={titleVariants}
+            className="mb-12 sm:mb-14 lg:mb-16"
+          >
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 px-2">
               <span className="text-neutral-900">En </span>
-              <span className="bg-gradient-to-r from-primary-600 via-accent-600 to-success-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary-600 via-accent-600 to-success-600 bg-clip-text text-transparent block sm:inline text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                 LACEB S.A. DE C.V.
               </span>
             </h2>
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-800">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-neutral-800 px-2">
               somos fieles a nuestros{" "}
-              <span className="bg-gradient-to-r from-primary-600 via-accent-600 to-success-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary-600 via-accent-600 to-success-600 bg-clip-text text-transparent block sm:inline text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                 VALORES
               </span>
             </h3>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-primary-500 via-accent-500 to-success-500 rounded-full mx-auto mt-6" />
+            <div className="w-16 sm:w-20 lg:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-primary-500 via-accent-500 to-success-500 rounded-full mx-auto mt-4 sm:mt-5 lg:mt-6" />
           </motion.div>
 
-          {/* Grid de valores */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          {/* Grid de valores - responsive */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 xl:gap-8 max-w-5xl mx-auto px-2">
             {valores.map((valor, index) => (
               <motion.div
                 key={valor.id}
                 variants={itemVariants}
                 whileHover={{
-                  y: -8,
+                  y: -6,
                   scale: 1.02,
                 }}
                 className="group relative"
               >
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${valor.gradient} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl`}
+                  className={`absolute inset-0 bg-gradient-to-br ${valor.gradient} rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg sm:blur-xl`}
                 />
 
-                <div className="relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-neutral-200">
+                <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-neutral-200">
                   <div
-                    className={`h-2 w-full bg-gradient-to-r ${valor.gradient}`}
+                    className={`h-1.5 sm:h-2 w-full bg-gradient-to-r ${valor.gradient}`}
                   />
 
-                  <div className="p-8">
+                  <div className="p-5 sm:p-6 lg:p-8">
                     {/* Icono circular con gradiente */}
                     <div
-                      className={`w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${valor.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                      className={`w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 mx-auto mb-4 sm:mb-5 lg:mb-6 rounded-xl sm:rounded-2xl bg-gradient-to-br ${valor.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
                     >
-                      {valor.icon}
+                      <div className="scale-75 sm:scale-90 lg:scale-100">
+                        {valor.icon}
+                      </div>
                     </div>
 
-                    {/* Título del valor */}
+                    {/* Título del valor - SIEMPRE NEGRO */}
                     <h4
-                      className={`text-2xl font-bold mb-3 bg-gradient-to-r ${valor.gradient} bg-clip-text text-transparent`}
+                      className={`text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-neutral-900 transition-colors duration-300`}
                     >
                       {valor.title}
                     </h4>
 
-                    {/* Descripción */}
-                    <p className="text-sm text-neutral-600">
+                    {/* Descripción - SIEMPRE GRIS */}
+                    <p className="text-xs sm:text-sm text-neutral-600 px-1 transition-colors duration-300">
                       {valor.description}
                     </p>
 
                     {/* Efecto de borde en hover */}
-                    <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/20 rounded-2xl transition-all duration-300" />
+                    <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/20 rounded-xl sm:rounded-2xl transition-all duration-300" />
                   </div>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* Frase de cierre */}
+          {/* Frase de cierre - responsive */}
           <motion.p
             variants={itemVariants}
-            className="mt-16 text-lg text-neutral-600 max-w-3xl mx-auto italic"
+            className="mt-12 sm:mt-14 lg:mt-16 text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto italic px-4"
           >
             "La calidad no es un acto, es un hábito que practicamos cada día"
           </motion.p>
         </motion.div>
       </div>
+
+      {/* Estilos para line-clamp */}
+      <style jsx>{`
+        .line-clamp-6 {
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        .line-clamp-5 {
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        @media (min-width: 1024px) {
+          .line-clamp-none {
+            -webkit-line-clamp: unset;
+          }
+        }
+      `}</style>
     </section>
   );
 };

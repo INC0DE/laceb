@@ -113,40 +113,6 @@ const Footer = () => {
 
           {/* Quick Links & Social - 3 columns */}
           <div className="lg:col-span-3 space-y-8">
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-white font-semibold text-lg mb-4 relative inline-block">
-                Enlaces
-                <span className="absolute -bottom-1 left-0 w-12 h-0.5 bg-brand-orange"></span>
-              </h3>
-              <nav className="space-y-3">
-                <Link
-                  href="/Privacy"
-                  className="block text-neutral-300 hover:text-brand-orange transition-colors hover:translate-x-1 transform duration-200"
-                >
-                  Aviso de Privacidad
-                </Link>
-                <Link
-                  href="/terms"
-                  className="block text-neutral-300 hover:text-brand-orange transition-colors hover:translate-x-1 transform duration-200"
-                >
-                  Términos y Condiciones
-                </Link>
-                <Link
-                  href="/about"
-                  className="block text-neutral-300 hover:text-brand-orange transition-colors hover:translate-x-1 transform duration-200"
-                >
-                  Sobre LACEB
-                </Link>
-                <Link
-                  href="/blog"
-                  className="block text-neutral-300 hover:text-brand-orange transition-colors hover:translate-x-1 transform duration-200"
-                >
-                  Blog de Salud
-                </Link>
-              </nav>
-            </div>
-
             {/* Social Media */}
             <div>
               <h3 className="text-white font-semibold text-lg mb-4 relative inline-block">
