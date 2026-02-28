@@ -489,7 +489,6 @@ const Header = () => {
                         }`}
                         onClick={() => setIsMenuOpen(false)}
                       >
-                        <span className="text-xl sm:text-2xl">{item.icon}</span>
                         <span className="text-base sm:text-lg font-medium">
                           {item.label}
                         </span>
@@ -505,7 +504,6 @@ const Header = () => {
                     className="space-y-1"
                   >
                     <div className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 text-neutral-500">
-                      <span className="text-xl sm:text-2xl">⚙️</span>
                       <span className="text-base sm:text-lg font-medium">
                         Servicios
                       </span>
@@ -521,9 +519,6 @@ const Header = () => {
                         }`}
                         onClick={() => setIsMenuOpen(false)}
                       >
-                        <span className="text-lg sm:text-xl">
-                          {service.icon}
-                        </span>
                         <div className="flex-1">
                           <p className="text-sm sm:text-base font-medium">
                             {service.label}
@@ -546,7 +541,7 @@ const Header = () => {
                 >
                   <div className="bg-gradient-to-r from-primary-50 to-accent-50 p-3 sm:p-4 rounded-lg sm:rounded-xl">
                     <p className="text-xs sm:text-sm text-neutral-600 text-center font-medium">
-                      📍 Calidad y precisión certificada
+                      Calidad y precisión certificada
                     </p>
                     <p className="text-xs text-neutral-500 text-center mt-1 sm:mt-2">
                       ISO 17025 · 15 años de experiencia
