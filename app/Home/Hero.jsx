@@ -120,8 +120,6 @@ const Hero = () => {
         },
       });
 
-      // ELIMINADO: El efecto que ocultaba los textos al hacer scroll
-
       // Animación de partículas
       if (floatingElementsRef.current && particles.length > 0) {
         const particles_elements = floatingElementsRef.current.children;
@@ -248,7 +246,7 @@ const Hero = () => {
                 className="bg-primary-DEFAULT hover:bg-primary-600 text-white font-semibold px-10 py-7 text-lg rounded-xl shadow-2xl transition-all duration-300 group"
               >
                 <span className="flex items-center gap-2">
-                  Cotiza Ahora
+                  Cantactanos Ahora
                   <svg
                     className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
                     fill="none"

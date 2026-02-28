@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <Industries />
       <Introduction />
+      <Industries />
       <Brands />
       <Findings />
     </div>

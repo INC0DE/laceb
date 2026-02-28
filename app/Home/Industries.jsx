@@ -190,7 +190,7 @@ const Industries = () => {
                     className={`absolute inset-0 ${industry.bgLight} rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500`}
                   />
                   <div
-                    className={`relative w-24 h-24 mx-auto ${industry.bgLight} rounded-2xl p-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border ${industry.borderColor}`}
+                    className={`relative w-24 h-24 mx-auto bg-neutral-800 rounded-2xl p-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border ${industry.borderColor}`}
                   >
                     <Image
                       src={industry.icon}
