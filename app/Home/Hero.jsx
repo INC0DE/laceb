@@ -38,7 +38,7 @@ const Hero = () => {
         </Link>
 
         <div className="mt-10 text-base md:text-xl lg:text-3xl text-white">
-          Calibración | Mantenimiento | Volumeneffff
+          Calibración | Mantenimiento | Volumenedfvdfvf
         </div>
       </div>
     </section>
